@@ -8,7 +8,7 @@
           cols="6"
         >
           <v-card>
-            <nuxt-link to="core">
+            <nuxt-link :to="game.path">
               <v-img
                 :src="game.icon"
                 class="white--text align-end"

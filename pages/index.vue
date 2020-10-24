@@ -8,43 +8,20 @@
           cols="6"
         >
           <v-card>
-            <nuxt-link :to="game.path">
+            <a v-bind:href="game.path">
               <v-img
                 :src="game.icon"
                 class="white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
               />
-            </nuxt-link>
+            </a>
             <v-card-title v-text="game.name" />
             </v-img>
-
-            <v-card-actions>
-              <v-spacer />
-
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
-            </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
     </v-container>
-    <v-btn @click="god">
-      asd
-    </v-btn>
-    <router-link to="/core/">
-      Router Link 1
-    </router-link>
-    <a href="https://demo.isebarn.com/core/">External Link to another page</a>
   </v-layout>
 </template>
 
@@ -76,10 +53,8 @@ export default {
   },
 
   methods: {
-    god () {
-      this.$router.push('core')
-      this.$router.go(1)
-      this.$router.go()
+    god (item) {
+      print(item)
     }
   }
 }

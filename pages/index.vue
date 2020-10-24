@@ -41,9 +41,10 @@
     <v-btn @click="god">
       asd
     </v-btn>
-    <router-link to="https://demo.isebarn.com/core/">
+    <router-link to="/core/">
       Router Link 1
     </router-link>
+    <a href="https://demo.isebarn.com/core/">External Link to another page</a>
   </v-layout>
 </template>
 

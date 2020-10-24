@@ -41,7 +41,7 @@
     <v-btn @click="god">
       asd
     </v-btn>
-    <router-link to="core">
+    <router-link to="https://demo.isebarn.com/core/">
       Router Link 1
     </router-link>
   </v-layout>

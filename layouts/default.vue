@@ -64,10 +64,10 @@ export default {
           visible: true
         },
         {
-          icon: 'mdi-chat',
-          title: 'Chat',
-          to: '/signalrchat/',
-          visible: false
+          icon: 'mdi-account-plus-outline',
+          title: 'Developers',
+          to: '/developers/',
+          visible: this.$auth.loggedIn && this.$auth.user[0].developer
         }
       ],
       title: 'Title'

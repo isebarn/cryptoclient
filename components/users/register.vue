@@ -14,7 +14,7 @@
         <v-text-field v-model="registerUsername" label="Username" />
         <v-text-field v-model="registerPassword" label="Password" />
         <v-text-field v-model="registerEmail" label="Email" />
-        <v-checkbox :checked="developer" label="Developer account" />
+        <v-checkbox v-model="developer" :checked="developer" label="Developer account" />
         <v-btn color="success" block @click="register">
           Register
         </v-btn>

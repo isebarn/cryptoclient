@@ -8,7 +8,7 @@
           cols="6"
         >
           <v-card>
-            <a v-bind:href="game.path">
+            <a :href="game.path">
               <v-img
                 :src="game.icon"
                 class="white--text align-end"

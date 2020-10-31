@@ -1,3 +1,9 @@
 Games:
   - method: get
     get: /game
+
+  - method: post
+    post: /game
+
+  - method: user_games
+    get: /game/:userId

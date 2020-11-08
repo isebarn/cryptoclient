@@ -1,5 +1,5 @@
 async function userRegister (app, user) {
-  const response = await app.$axios.post('emailuser/register', user)
+  const response = await app.$axios.post('users', user)
   return response
 }
 

@@ -2,7 +2,6 @@
   <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
-      fixed
       app
     >
       <v-list>
@@ -12,6 +11,7 @@
           :to="item.to"
           router
           exact
+          @click="drawer = false"
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -68,9 +68,15 @@ export default {
           title: 'Developers',
           to: '/developers/',
           visible: this.$auth.loggedIn && this.$auth.user.Developer
+        },
+        {
+          icon: 'mdi-information-outline',
+          title: 'About us',
+          to: 'about',
+          visible: true
         }
       ],
-      title: 'Title'
+      title: 'PRIMEPLAY.IO'
     }
   },
 

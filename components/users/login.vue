@@ -11,7 +11,7 @@
         Login
       </v-card-title>
       <v-col>
-        <v-text-field v-model="loginUsername" label="Username" />
+        <v-text-field v-model="loginUsername" label="Email" />
         <v-text-field v-model="loginPassword" label="Password" autocomplete="new-password" type="Password" />
         <v-btn block color="#5DD099" @click="login">
           Login

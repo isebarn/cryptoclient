@@ -11,7 +11,7 @@
         Register
       </v-card-title>
       <v-col>
-        <v-text-field v-model="registerUsername" label="Username" />
+        <v-text-field v-model="registerUsername" label="Name" />
         <v-text-field v-model="registerPassword" label="Password" />
         <v-text-field v-model="registerEmail" label="Email" />
         <v-checkbox v-model="developer" :checked="developer" label="Developer account" />
@@ -45,10 +45,10 @@ export default {
   methods: {
     async register () {
       const data = {}
-      data.Username = this.registerUsername
-      data.Password = this.registerPassword
-      data.Email = this.registerEmail
-      data.Developer = this.developer
+      data.name = this.registerUsername
+      data.password = this.registerPassword
+      data.email = this.registerEmail
+      data.developer = this.developer
       try {
         const result = await this.$userRegister(data)
 

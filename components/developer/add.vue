@@ -103,10 +103,10 @@ export default {
     save_game () {
       const self = this
       const data = {}
-      data.Name = this.name
-      data.Icon = this.image
-      data.Github = this.github
-      data.UserId = this.$auth.user[0].userId
+      data.name = this.name
+      data.icon = this.image
+      data.github = this.github
+      data.user_id = this.$auth.user.Id
       try {
         this.$api.Games.post(data)
           .then(function (response) {

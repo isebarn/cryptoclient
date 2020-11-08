@@ -42,7 +42,6 @@ export default {
     async login () {
       try {
         const result = await this.$userLogin(this.loginUsername, this.loginPassword)
-
         if (result) {
           this.dialog = false
         }

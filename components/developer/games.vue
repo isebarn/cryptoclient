@@ -3,20 +3,20 @@
     <v-row dense>
       <v-col
         v-for="game in games"
-        :key="game.id"
+        :key="game.Id"
         cols="6"
         offset="3"
       >
         <v-card>
-          <a :href="game.path">
+          <a :href="game.Path">
             <v-img
-              :src="game.icon"
+              :src="game.Icon"
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="200px"
             />
           </a>
-          <v-card-title>{{ game.name + (game.active ? '' : ' (pending approval)') }}</v-card-title>
+          <v-card-title>{{ game.Name + (game.Active ? '' : ' (pending approval)') }}</v-card-title>
           </v-img>
         </v-card>
       </v-col>
@@ -29,7 +29,7 @@ export default {
   fetch () {
     const self = this
     self.dison = true
-    this.$api.Games.user_games(this.$auth.user[0].userId)
+    this.$api.Games.user_games(this.$auth.user.Id)
       .then(function (response) {
         self.games.push(...response.data)
       })

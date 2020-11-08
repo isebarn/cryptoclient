@@ -67,7 +67,7 @@ export default {
           icon: 'mdi-account-plus-outline',
           title: 'Developers',
           to: '/developers/',
-          visible: this.$auth.loggedIn && this.$auth.user[0].developer
+          visible: this.$auth.loggedIn && this.$auth.user.Developer
         }
       ],
       title: 'Title'

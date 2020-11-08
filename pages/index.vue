@@ -4,19 +4,19 @@
       <v-row dense>
         <v-col
           v-for="game in games"
-          :key="game.id"
+          :key="game.Id"
           cols="6"
         >
           <v-card>
-            <a :href="game.path">
+            <a :href="game.Path">
               <v-img
-                :src="game.icon"
+                :src="game.Icon"
                 class="white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
               />
             </a>
-            <v-card-title v-text="game.name" />
+            <v-card-title v-text="game.Name" />
             </v-img>
           </v-card>
         </v-col>

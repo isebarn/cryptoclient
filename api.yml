@@ -1,9 +1,9 @@
 Games:
   - method: get
-    get: /game
+    get: /games
 
   - method: post
-    post: /game
+    post: /games
 
   - method: user_games
-    get: /game/:userId
+    get: /developers/games/:user_id

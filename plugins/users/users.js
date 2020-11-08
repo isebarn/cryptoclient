@@ -13,6 +13,7 @@ async function userLogin (app, username, password) {
     })
     return true
   } catch (e) {
+    console.log(e.response.data.message)
     app.error = e.response.data.message
   }
 
